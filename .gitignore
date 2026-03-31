@@ -1,25 +1,34 @@
-# Maven
+HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 src/main/resources/configurations
 
-
-# IntelliJ / Eclipse
-.idea/
-*.iml
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
 
-# OS
-.DS_Store
-Thumbs.db
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-# Local runtime data
-data/
-logs/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Secrets (never commit real keys)
-**/*service-account*.json
-**/*credentials*.json
-**/.env
+### VS Code ###
+.vscode/
